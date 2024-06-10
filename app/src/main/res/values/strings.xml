@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Fapp</string>
+    <string name="back">Back</string>
+    <string name="settings">Settings</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="notifications">Notifications</string>
+    <string name="security">Security</string>
+    <string name="language">Language</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="help_centre">Help Centre</string>
+    <string name="logout">Logout</string>
+
+
+</resources>
