@@ -8,8 +8,9 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Create Articles"
+        android:text="@string/Create_Articles"
         android:textSize="24sp"
+        android:layout_marginTop="40dp"
         android:textStyle="bold" />
 
     <FrameLayout
@@ -20,13 +21,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/article"
+            android:contentDescription="@string/article"
             android:scaleType="fitCenter"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Add cover image"
+            android:text="@string/Add_cover_image"
             android:textColor="@android:color/darker_gray" />
 
     </FrameLayout>
@@ -34,13 +36,17 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Title" />
+        android:hint="@string/Title"
+        android:autofillHints=""
+        android:inputType="" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Write your article here..."
-        android:minLines="5" />
+        android:hint="@string/write_your_article_here"
+        android:minLines="5"
+        android:importantForAutofill="no"
+        android:inputType="" />
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
@@ -66,7 +72,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
-        android:text="Publish"
+        android:text="@string/publish"
         android:textColor="@android:color/white" />
 
 </LinearLayout>

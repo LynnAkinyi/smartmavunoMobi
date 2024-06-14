@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -8,20 +9,22 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="Back"
+            android:contentDescription="@string/Back"
             />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Settings"
+            android:text="@string/Settings"
             android:textSize="20sp"
+            android:layout_marginTop="40dp"
             android:textStyle="bold" />
 
     </LinearLayout>
@@ -32,7 +35,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="30dp">
 
         <LinearLayout
@@ -41,18 +44,20 @@
             android:orientation="horizontal"
             android:gravity="center_vertical"
             android:layout_marginBottom="15dp"
-            android:paddingVertical="16dp">
+            android:paddingVertical="16dp"
+            tools:ignore="UseCompoundDrawables">
 
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/profile"/>
+                android:src="@drawable/profile"
+                android:contentDescription="@string/Profile"/>
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Personal Information"
+                android:text="@string/Personal_information"
                 android:textSize="16sp"
                 android:layout_marginStart="16dp" />
 
@@ -69,13 +74,14 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/notification"/>
+                android:src="@drawable/notification"
+                android:contentDescription="@string/Notification"/>
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Notification"
+                android:text="@string/Notification"
                 android:textSize="16sp"
                 android:layout_marginStart="16dp" />
 
@@ -92,13 +98,14 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/security"/>
+                android:src="@drawable/security"
+                android:contentDescription="@string/Security"/>
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Security"
+                android:text="@string/Security"
                 android:textSize="16sp"
                 android:layout_marginStart="16dp" />
 
@@ -115,13 +122,14 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/lang"/>
+                android:src="@drawable/lang"
+                android:contentDescription="@string/Language"/>
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Language   English US"
+                android:text="@string/language_english_us"
                 android:textSize="16sp"
                 android:layout_marginStart="16dp" />
 
@@ -138,13 +146,14 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/theme"/>
+                android:src="@drawable/theme"
+                android:contentDescription="@string/theme"/>
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Dark Mode"
+                android:text="@string/Dark_Mode"
                 android:textSize="16sp"
                 android:layout_marginStart="16dp" />
 
@@ -162,13 +171,14 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/help"/>
+                android:src="@drawable/help"
+                android:contentDescription="@string/Help_Centre"/>
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Help Centre"
+                android:text="@string/Help_Centre"
                 android:textSize="16sp"
                 android:layout_marginStart="16dp" />
 
@@ -184,19 +194,20 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/logout"/>
+                android:src="@drawable/logout"
+                android:contentDescription="@string/Logout"/>
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Logout"
+                android:text="@string/Logout"
                 android:textSize="16sp"
                 android:layout_marginStart="16dp" />
 
         </LinearLayout>
 
-        <!-- Other settings options follow a similar pattern -->
+
 
     </LinearLayout>
 
